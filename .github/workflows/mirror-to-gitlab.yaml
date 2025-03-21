@@ -15,5 +15,6 @@ jobs:
 
       - name: Push to GitLab
         run: |
-          git remote add gitlab https://oauth2:${{ secrets.GITLAB_TOCKEN }}@gitlab.com/xerofenix/git-jwt.git
-          git push gitlab main  # Change this to your default branch if it's different
+          git remote add gitlab https://oauth2:${{ secrets.GITLAB_TOCKEN }}@gitlab.com/xerofenix/git-jwt.git || echo "Remote already exist"
+          git fetch gitlab || echo "No existing remote to fetch"
+          git push gitlab main --force # Change this to your default branch if it's different
