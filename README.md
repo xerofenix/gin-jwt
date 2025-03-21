@@ -19,7 +19,7 @@ https://gitlab.com/xerofenix/git-jwt
 PORT=3000(or any port that you want to access on)
 DB_URL="host=your-db-host user=-db-user password=-db-password dbname=db-name port=-db-port sslmode=disable TimeZone=Asia/Shanghai"
 SECRET=any-secret-code
-
+```
 3. Open termianl in the "gin-jwt" directory and run
 ```sh
 go run main.go
