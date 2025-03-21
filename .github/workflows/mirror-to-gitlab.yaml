@@ -15,5 +15,5 @@ jobs:
 
       - name: Push to GitLab
         run: |
-          git remote add gitlab https://gitlab.com/xerofenix/git-jwt
+          git remote add gitlab https://gitlab.com/xerofenix/gin-jwt
           git push gitlab main  # Change this to your default branch if it's different
